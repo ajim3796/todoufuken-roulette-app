@@ -70,27 +70,7 @@ imageElements[topImageIndex].style.display = "";
 
 // チェックボックス
 const checkboxes = document.querySelectorAll("input[type=checkbox]");
-const oldLocalItem = localStorage.getItem("perfecture");
-let perfecture;
-if (oldLocalItem) {
-    perfecture = [];
-    oldItem = JSON.parse(oldLocalItem);
-    oldItem.forEach(num => {
-        num -= 1;
-        perfecture.push(num);
-    });
-    localStorage.clear();
-    localStorage.setItem("selectable", JSON.stringify(perfecture));
-}
-const localItem = localStorage.getItem("selectable")
-if (!localItem) {
-    perfecture = [];
-    for (let i = 0; i < 47; i++) {
-        perfecture.push(i);
-    }
-} else {
-    perfecture = JSON.parse(localItem);
-}
+let perfecture = [1, 2, 3, 4, 10, 12, 13, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 35, 36, 37, 43, 44]
 perfecture.forEach(index => {
     checkboxes[index].checked = false;
 });
@@ -103,7 +83,6 @@ checkboxes.forEach((element, i) => {
         } else {
             perfecture.splice(index, 1);
         }
-        localStorage.setItem("selectable", JSON.stringify(perfecture));
     });
 });
 
