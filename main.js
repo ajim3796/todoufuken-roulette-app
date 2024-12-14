@@ -61,6 +61,7 @@ const imageList = [
 imageList.forEach((src) => {
     const itemImage = document.createElement("img");
     itemImage.src = src;
+    itemImage.className = "roulette-img";
     itemImage.style.display = "none";
     rouletteElement.appendChild(itemImage);
 })

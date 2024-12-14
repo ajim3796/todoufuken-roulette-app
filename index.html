@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <div id="roulette"></div>
-    <div id="button">
-        <input type="button" value="す た ー と" id="switch" onclick="buttonSwitch()" />
+    <div id="roulette" class="roulette"></div>
+    <div id="button" class="button">
+        <input type="button" value="す た ー と" id="switch" class="start-stop-button" onclick="buttonSwitch()" />
     </div>
-    <div id="settings">
+    <div class="settings">
         <details class="accordion">
             <summary>縺帙▲縺ｦ繝ｼ</summary>
             <div class="text">以下のチェックボックスにチェックを入れることで、ルーレットの結果にその都道府県は表示されなくなります。</div>
             <div class="inner">
                 <fieldset>
-                    <legend>都道府県</legend>
+                    <legend class="legend">都道府県</legend>
                     <div>
                         <input type="checkbox" id="cb0" name="北海道" checked />
                         <label for="cb0">北海道</label>

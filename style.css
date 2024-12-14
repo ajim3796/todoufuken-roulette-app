@@ -7,12 +7,12 @@ body {
     max-width: 500px;
 }
 
-img {
+.roulette-img {
     border-radius: 15px;
     width: 100%;
 }
 
-input[type="button"] {
+.start-stop-button {
     appearance: none;
     background-color: firebrick;
     border-radius: 100vh;
@@ -30,22 +30,22 @@ input[type="button"] {
     padding-right: 20px;
 }
 
-legend {
+.legend {
     padding-inline: 5px;
 }
 
-#roulette {
+.roulette {
     max-height: 500px;
     max-width: 500px;
 }
 
-#button {
+.button {
     margin-top: 50px;
     margin-bottom: 200px;
     text-align: center;
 }
 
-#settings {
+.settings {
     background-color: white;
     border-radius: 10px;
     margin-left: auto;
