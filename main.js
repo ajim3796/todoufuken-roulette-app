@@ -70,7 +70,7 @@ imageElements[topImageIndex].style.display = "";
 
 // チェックボックス
 const checkboxes = document.querySelectorAll("input[type=checkbox]");
-let perfecture = [1, 19, 22, 24, 25, 26, 28, 33, 36, 37, 44];
+let perfecture = [1, 19, 22, 24, 25, 28, 33, 36, 37, 44];
 perfecture.forEach((index) => {
   checkboxes[index].checked = false;
 });
